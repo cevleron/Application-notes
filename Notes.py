@@ -13,7 +13,7 @@ def new_file():
 
 
 def save_as():
-    out = asksaveasfile(mode='w', defaultextension='.txt')
+    out = asksaveasfile(mode='w', defaultextension='.json')
     data = text.get('1.0', END)
     try:
         out.write(data.rstrip())
